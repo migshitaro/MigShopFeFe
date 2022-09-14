@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devise-wwidth, initial-scale=1.0">
+        <title>MigShopfefe-Product</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+<!------------ body --------------->
+
+    <body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="200px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="product.html" class="btn">Product</a></li>
+                    <li><a href="account.html" class="btn">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" style="margin: 10px;"></a>
+        </div>
+    </div>	
+    </div>
+
+<!--------- single products detauls --------->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/33.jpg" width="100%" height="500px" id="productImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/33.jpg" width="100%" height="113px" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/34.jpg" width="100%" height="113px" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/27.jpg" width="100%" height="113px" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/29.jpg" width="100%" height="113px" class="small-img">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-2">
+            <p>Home / Shoes</p>
+            <h1>Sneakers</h1>
+            <h4>200.00</h4>
+            <select name="" id="">
+                <option value="">select size</option>
+                <option value="">40</option>
+                <option value="">41</option>
+                <option value="">42</option>
+                <option value="">43</option>
+                <option value="">44</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add to cart</a>
+            <h3>Product details <i class="fa fa-indent"></i></h3>
+            <br>
+        </div>
+
+    </div>
+</div>
+ 
+<!------- tile-------->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Product</h2>
+            <p> <a href="../product.html" class="btn"> view more</a></p>
+        </div>
+    </div>
+
+
+    <div class="small-container">
+         <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>    
+                </div>
+                <p>200.00 BTC</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                     <i class="fa fa-star-o"></i>    
+                </div>
+                <p>200.00 BTC</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>    
+                </div>
+                <p>200.00 BTC</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>    
+                </div>
+                <p>200.00 BTC</p>
+            </div>
+         </div>
+
+    </div>
+
+<!----- footer ------>
+
+<section class="footer">
+   <a href="index.html"> <img src="images/logo.png" width="150px" ></a>
+    <p>It is a strength to be a very new firm. We are nimble and responsive, maintain high standards of quality and promote <br>the human component in each customer partnership that we establish.</p>
+    <div class="icons">
+        <a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <hr>
+    <p style="padding: 20px;">Copyright 2022 | MigShopfefe</p>
+</section>
+
+<!------- js for product gallery ------->
+
+<script>
+    var ProductImg  = document.getElementById("productImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+
+    </body>
+
+</html>
